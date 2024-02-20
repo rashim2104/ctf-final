@@ -2,6 +2,7 @@
 import {useState} from 'react';
 
 const Task6 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
+    const [isLoading, setIsLoading] = useState(false);
     const handleCheck = () => {
         const userAnswer = taskanswers.task6_1;
         try{
@@ -21,19 +22,30 @@ const Task6 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
             });
         }catch(error){
             alert("An error occurred. Please try again.");
+        } finally {
+            setIsLoading(false); // Reset loading state
         }
     };
 
     return (
-        <div className='task-3'>
-            <input
-                type='text'
-                placeholder='Flag 1'
-                required
-                value={taskanswers.task6_1}
-                onChange={(event) => setTaskAnswers({ ...taskanswers, task6_1: event.target.value })}
-            /> <br />
-            <button onClick={handleCheck}>Check</button>
+        <div className='task1'>
+            <center><p className='bg-black p-3 w-3/4 bg-opacity-50'> Task-6 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam fuga quis corporis ea, vel doloremque dolores sequi nam cupiditate dignissimos, beatae nisi illum qui? Magni, consequuntur. Laudantium ea quia id?</p></center>
+            <div className='task-1'>
+                <input
+                    className="mt-6 mb-6 peer h-full w-1/2 rounded-[7px]  !border  !border-gray-300 border-t-transparent bg-transparent bg-white px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700  shadow-lg shadow-gray-900/5 outline outline-0 ring-4 ring-transparent transition-all placeholder:text-gray-500 placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2  focus:!border-gray-900 focus:border-t-transparent focus:!border-t-gray-900 focus:outline-0 focus:ring-gray-900/10 disabled:border-0 disabled:bg-blue-gray-50 inputfield"
+                    type='text'
+                    // placeholder='Flag 1'
+                    required
+                    value={taskanswers.task6_1}
+                    onChange={(event) => setTaskAnswers({ ...taskanswers, task6_1: event.target.value })}
+                /> 
+                <br />
+                <button className='button-54' onClick={handleCheck} disabled={isLoading}>
+                    {isLoading ? 'Loading...' : 'Check'}
+                </button>            </div>
+            <button className='hint-button' onClick={() => alert('Follow the rules da Kanna')}>
+                Hint
+            </button>
         </div>
     );
 };

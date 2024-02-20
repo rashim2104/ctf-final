@@ -8,6 +8,7 @@ const Task4 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
         answer3: false
     });
 
+    const [isLoading, setIsLoading] = useState(false);
     const soloCheck = async(userAnswer, tag) => {
         try{
             const response = await fetch("/api/task4", {

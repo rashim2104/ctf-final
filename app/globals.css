@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -18,7 +19,7 @@
   }
 }
 *{
-  font-family: "Audiowide", sans-serif;
+  font-family: "Press Start 2P", sans-serif;
 }
 body {
   color: rgb(var(--foreground-rgb));
@@ -95,6 +96,9 @@ video {
   /* Other styles for the form container */
 }
 
+.inputfield{
+  color: transparent;
+}
 
 
 body {
@@ -121,6 +125,7 @@ body {
   color: transparent;
   background-color: transparent;
   border: none;
+  cursor: not-allowed;
   margin-top: 10px; /* Optional margin for spacing between tasks and hint button */
 }
 
@@ -151,12 +156,12 @@ body {
 
 
 .button-54 {
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+  color: white;
   border: 3px solid;
   padding: 0.25em 0.5em;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
