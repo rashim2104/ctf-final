@@ -30,7 +30,7 @@ const Task1 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
 
     return (
         <div className='task1'>
-            <center><p className='bg-black p-3 w-3/4 bg-opacity-50'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam fuga quis corporis ea, vel doloremque dolores sequi nam cupiditate dignissimos, beatae nisi illum qui? Magni, consequuntur. Laudantium ea quia id?</p></center>
+            <center><p className='bg-black p-3 w-3/4 bg-opacity-50'>Welcome to your first Challenge! We have a series of challenges with start of this one The flag for this one is very easy you just Have to go through the Page to find the Hint Button Good Luck :)</p></center>
             {/* <p className="glitch" data-text="Unaku Pudichadha Podu">Unaku Pudichadha Podu</p> */}
             <div className="hero-container">
               <div className="environment"></div>
@@ -50,7 +50,7 @@ const Task1 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
                     {isLoading ? 'Loading...' : 'Check'}
                 </button>
             </div>
-            <button className='hint-button' onClick={() => alert('Follow the rules da Kanna')}>
+            <button className='hint-button' onClick={() => alert('Answer is in Task Guidelines Itself')}>
                 Hint
             </button>
         </div>
