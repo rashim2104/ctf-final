@@ -11,6 +11,10 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -37,11 +41,30 @@ body {
   }
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+#audioPlayer {
+  width: 100%;
+  background: #333;
+  padding: 20px;
+  color: #fff;
+}
+
+#audio {
+   width: 100%;
+}
+
 body {
   /* cursor: none; */
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Ensure the video doesn't cause scrolling */
+  overflow: auto; /* Ensure the video doesn't cause scrolling */
 }
 
 video {
@@ -80,6 +103,7 @@ video {
   object-fit: cover;
 }
 
+
 .blur-background {
   position: absolute;
   top: 0;
@@ -90,9 +114,11 @@ video {
 }
 
 .form-container {
+  /* height: 100%; */
   position: relative;
   z-index: 1; /* Ensure the form container is above the blur background */
   border-radius: 10px;
+  overflow: auto;
   /* Other styles for the form container */
 }
 
@@ -174,7 +200,7 @@ body {
 .button-54:hover {
   background-color: white;
   color: black;
-  box-shadow: 1px 1px 0px 0px rgb(101, 101, 101), 2px 2px 0px 0px rgb(0, 0, 0), 3px 3px 0px 0px rgb(0, 0, 0), 4px 4px 0px 0px rgb(0, 0, 0), 5px 5px 0px 0px rgb(0, 0, 0);
+  box-shadow: 1px 1px 0px 0px rgb(226, 226, 226)px 2px 0px 0px rgb(255, 255, 255)px 3px 0px 0px rgb(0, 0, 0), 4px 4px 0px 0px rgb(0, 0, 0), 5px 5px 0px 0px rgb(0, 0, 0);
 }
 
 

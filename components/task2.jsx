@@ -72,7 +72,7 @@ const Task2 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
 
     return (
         <div className='task-2 mt-6 mb-6'>
-            <center><p className='bg-black p-3 w-3/4 bg-opacity-50 text-white'>Flags are Inside the Provided <a href="https://www.google.com">Website :)</a> Find and answer these questions to proceed to Next Level</p></center>
+            <center><p className='bg-black p-3 w-3/4 bg-opacity-50 text-white'>Flags are Inside the Provided <span className='text-xl text-red-600'><a href="https://www.google.com" target='_blank'>Website :)</a></span> Find and enter the flags to proceed to Next Level.</p></center>
             <div className='flex flex-col'>
             <div className="flex flex-col  items-center">
                 <input
@@ -86,6 +86,9 @@ const Task2 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
                 <button className="button-54 w-1/6" disabled={validationResults.answer1} onClick={() => {
                     soloCheck(taskanswers.task2_1, 1);
                 }}>Check</button>
+                <button className="fixed top-10 left-10 p-2 rounded-lg text-transparent cursor-not-allowed" onClick={() => alert('Hope you all know what an Anchor tag is 😎')}>
+                 Hint
+                </button>
             </div>
             <br />
             <div className="flex flex-col  items-center">
@@ -100,6 +103,9 @@ const Task2 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
                 <button className="button-54 w-1/6" disabled={validationResults.answer2} onClick={() => {
                     soloCheck(taskanswers.task2_2, 2);
                 }}>Check</button>
+                <button className="fixed bottom-1000 left-80 p-2 rounded-lg text-transparent cursor-not-allowed" onClick={() => alert('Unlock the magic with just one line ;)')}>
+                 Hint
+                </button>
             </div>
             <br />
             <div className="flex flex-col  items-center">
@@ -114,11 +120,14 @@ const Task2 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
                 <button className="button-54 w-1/6" disabled={validationResults.answer3} onClick={() => {
                     soloCheck(taskanswers.task2_3, 3);
                 }}>Check</button>
+                <button className="fixed bottom-60 right-40 p-2 rounded-lg text-transparent cursor-not-allowed" onClick={() => alert('Ivan Dummy Bhava')}>
+                 Hint
+                </button>
             </div>
             <br />
             <div className='flex flex-col  items-center'>
             <button className='button-54 items-center' onClick={handleCheck} disabled={isLoading}>
-                    {isLoading ? 'Loading...' : 'Check'}
+                    {isLoading ? 'Loading...' : 'Check All'}
             </button>
             </div>
             </div>

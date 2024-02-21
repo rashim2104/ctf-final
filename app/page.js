@@ -13,7 +13,7 @@ import Task7 from '@/components/task7';
 
 function Form() {
 
-    const [step, setStep] = useState(0);
+    const [step, setStep] = useState(3);
 
     const TaskTitles = ["Chumma", "Inspect", "VisualCrypto", "NestedHex", "MorseCode", "QR", "MP3", "Congratulations"];
     const [taskanswers, setTaskAnswers] = useState({
@@ -106,7 +106,7 @@ function Form() {
             Your browser does not support the video tag.
             </video>
             <div className='form-container'>
-                <div className='header'>
+            <div className={`header ${step === 3 ? 'mt-40' : ''}`}>
                 <div className="hero-container">
                    <div className="environment"></div>
                    <h2 className="hero glitch layers evntname" data-text="CTF Challenge"><span className='evntname'>CTF Challenge</span></h2>
@@ -122,7 +122,7 @@ function Form() {
                 <div className='footer'>
                 </div>
             </div>
-        </div>
+            </div>
     );
 }
 

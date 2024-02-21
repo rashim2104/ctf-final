@@ -1,6 +1,6 @@
 {
   "/page": "app/page.js",
-  "/api/task2/route": "app/api/task2/route.js",
-  "/api/task2all/route": "app/api/task2all/route.js",
-  "/api/task3/route": "app/api/task3/route.js"
+  "/api/task4/route": "app/api/task4/route.js",
+  "/api/task4all/route": "app/api/task4all/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

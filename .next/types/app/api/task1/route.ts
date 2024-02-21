@@ -1,4 +1,4 @@
-// File: C:\Users\student\Documents\GitHub\ctf-final\app\api\task1\route.js
+// File: D:\CTF\ctf-final\app\api\task1\route.js
 import * as entry from '../../../../../app/api/task1/route.js'
 import type { NextRequest } from 'next/server.js'
 
