@@ -3,24 +3,25 @@ import {useState} from 'react';
 
 const Task6 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
     const [isLoading, setIsLoading] = useState(false);
-    const handleCheck = () => {
+    const handleCheck = async () => {
         const userAnswer = taskanswers.task6_1;
-        try{
-            fetch("/api/task6", {
+        setIsLoading(true); // Set loading state to true
+        try {
+            const response = await fetch("/api/task6", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({ userAnswer }),
-            })
-            .then(response => response.json())
-            .then(data => {
+            });
+            if (response.ok) {
+                const data = await response.json();
                 alert(data.message);
-                if(data.message === "Correct answer. You have unlocked the next level."){
+                if (data.message === "Correct answer. You have unlocked the next level.") {
                     handleIncrementStep();
                 }
-            });
-        }catch(error){
+            }
+        } catch (error) {
             alert("An error occurred. Please try again.");
         } finally {
             setIsLoading(false); // Reset loading state

@@ -1,3 +1,4 @@
 {
+  "/api/task5/route": "app/api/task5/route.js",
   "/page": "app/page.js"
 }

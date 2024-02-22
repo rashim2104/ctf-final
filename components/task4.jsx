@@ -46,7 +46,7 @@ const Task4 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
         const userAnswer2 = taskanswers.task4_2;
         const userAnswer3 = taskanswers.task4_3;
 
-
+        setIsLoading(true); // Set loading state to true
         try{
             const response = await fetch("/api/task4all", {
                 method: "POST",

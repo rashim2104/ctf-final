@@ -4,25 +4,25 @@ import {useState} from 'react';
 const Task5 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
     const [isLoading, setIsLoading] = useState(false);
 
-    const handleCheck = () => {
+    const handleCheck = async () => {
         const userAnswer = taskanswers.task5_1;
         setIsLoading(true); // Set loading state to true
-        try{
-            fetch("/api/task5", {
+        try {
+            const response = await fetch("/api/task5", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({ userAnswer }),
-            })
-            .then(response => response.json())
-            .then(data => {
+            });
+            if (response.ok) {
+                const data = await response.json();
                 alert(data.message);
-                if(data.message === "Correct answer. You have unlocked the next level."){
+                if (data.message === "Correct answer. You have unlocked the next level.") {
                     handleIncrementStep();
                 }
-            });
-        }catch(error){
+            }
+        } catch (error) {
             alert("An error occurred. Please try again.");
         } finally {
             setIsLoading(false); // Reset loading state
@@ -44,7 +44,7 @@ const Task5 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
             <br />
             <button className='button-54' onClick={handleCheck} disabled={isLoading}>
                     {isLoading ? 'Loading...' : 'Check'}
-                </button>            
+            </button>          
             </div>
             <button className="fixed bottom-10 right-20 p-2 rounded-lg text-transparent cursor-not-allowed" onClick={() => alert('My friend is an antiquiary and This was first used in about 1844.')}>
                  Hint
