@@ -71,7 +71,11 @@ const Task4 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
 
     return (
         <div className='task1 '>
-            <center><p className='bg-black leading-4 p-3 w-3/4 mt-2 bg-opacity-50 text-white text-sm'>In the whimsical forest of Mystoria, a wizard named Oliver turned his friend Benjamin into a frog by mistake. After reversing the spell, a hen named Emily accidentally transformed into a peacock when she touched Oliver's wand. As the forest creatures marveled at the magical mishaps, a mysterious riddle echoed through the trees, hinting at the true nature of their enchanting transformations.</p></center>
+            <center>
+            <p className='bg-black leading-4 p-3 w-3/4 mt-2 bg-opacity-50 text-white text-sm'>
+            In the whimsical forest of Mystoria, a wizard named Oliver turned his friend Benjamin into a frog by mistake. After reversing the spell, a hen named Emily accidentally transformed into a peacock when she touched Oliver&apos;s wand. As the forest creatures marveled at the magical mishaps, a mysterious riddle echoed through the trees, hinting at the true nature of their enchanting transformations.
+            </p>
+            </center>
             <div className='flex flex-col'>
             <div className="flex flex-col  items-center">
             <p className='text-xs' style={{fontSize:'12px',letterSpacing:'0',lineHeight:'0'}}>33 37 20 34 32 20 32 30 20 33 33 20 33 34 20 32 30 20 33 33 20 33 30 20 32 30 20 33 33 20 33 34 20 32 30 20 33 35 20 34 36 20 32 30 20 33 36 20 33 36 20 32 30 20 33 36 20 34 33 20 32 30 20 33 36 20 33 31 20 32 30 20 33 36 20 33 37 20 32 30 20 33 35 20 34 36 20 32 30 20 33 36 20 34 35 20 32 30 20 33 36 20 34 36 20 32 30 20 33 37 20 33 34 20 32 30 20 33 35 20 34 36 20 32 30 20 33 36 20 33 36 20 32 30 20 33 36 20 34 36 20 32 30 20 33 37 20 33 35 20 32 30 20 33 36 20 34 35 20 32 30 20 33 36 20 33 34 20 32 30 20 33 35 20 34 36 20 32 30 20 33 36 20 33 32 20 32 30 20 33 37 20 33 35 20 32 30 20 33 37 20 33 34 20 32 30 20 33 35 20 34 36 20 32 30 20 33 37 20 33 39 20 32 30 20 33 36 20 34 36 20 32 30 20 33 37 20 33 35 20 32 30 20 33 35 20 34 36 20 32 30 20 33 36 20 33 33 20 32 30 20 33 36 20 33 31 20 32 30 20 33 36 20 34 35 20 32 30 20 33 35 20 34 36 20 32 30 20 33 36 20 33 34 20 32 30 20 33 36 20 34 36 20 32 30 20 33 35 20 34 36 20 32 30 20 33 36 20 33 32 20 32 30 20 33 36 20 33 35 20 32 30 20 33 37 20 33 34 20 32 30 20 33 37 20 33 34 20 32 30 20 33 36 20 33 35 20 32 30 20 33 37 20 33 32 20 32 30 20 33 37 20 34 34 20 32 30 20 33 30 20 34 31</p>
