@@ -13,7 +13,7 @@ import Task7 from '@/components/task7';
 
 function Form() {
 
-    const [step, setStep] = useState(4);
+    const [step, setStep] = useState(0);
 
     const TaskTitles = ["Chumma", "Inspect", "VisualCrypto", "NestedHex", "MorseCode", "QR", "MP3", "Congratulations"];
     const [taskanswers, setTaskAnswers] = useState({
