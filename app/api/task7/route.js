@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(req){
     const {userAnswer} = await req.json();
-    const correctAnswer = "1";
+    const correctAnswer = "{giorgia meloni}";
     try{
         if (userAnswer === correctAnswer) {
             return NextResponse.json({ message: "Correct answer. You have unlocked the next level." }, { status: 200 });

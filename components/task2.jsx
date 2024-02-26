@@ -72,7 +72,7 @@ const Task2 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
 
     return (
         <div className='task-2 mt-6 mb-6'>
-            <center><p className='bg-black p-3 w-3/4 bg-opacity-50 text-white'>Flags are Inside the Provided <span className='text-xl text-red-600'><a href="https://www.google.com" target='_blank'>Website :)</a></span> Find and enter the flags to proceed to Next Level.</p></center>
+            <center><p className='bg-black p-3 w-3/4 bg-opacity-50 text-white'>Flags are Inside the Provided <span className='text-xl text-red-600'><a href="https://65dc6031b91d7c9b61a1dc9a--cheerful-croquembouche-ff7105.netlify.app/" target='_blank'>Website :)</a></span> Find and enter the flags to proceed to Next Level.</p></center>
             <div className='flex flex-col'>
             <div className="flex flex-col  items-center">
                 <input
