@@ -101,6 +101,10 @@ function Form() {
 
     return (
         <div className='form'>
+            <div className='level'>
+                <img className='fixed top-20 left-20 bg-black bg-opacity-75 rounded' src='/photos/mario.gif' alt='level' width={100} height={100} />
+                <p className="fixed text-white text-lg font-bold mt-16 top-28 left-16 bg-black bg-opacity-75"> Level {step + 1} </p>
+            </div>
             <video autoPlay loop muted playsInline>
             <source src={VideoBG} type="video/mp4" />
             Your browser does not support the video tag.

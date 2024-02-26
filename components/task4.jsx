@@ -128,7 +128,7 @@ const Task4 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
                     {isLoading ? 'Loading...' : 'Check All'}
             </button>
             <div className='mt-6'></div>
-            <button className="fixed top-96 left-36 p-2 rounded-lg text-transparent cursor-not-allowed" onClick={() => alert('It&apos;s not about the magic, my friends, but the unexpected conversions that bring surprises in the end.')}>
+            <button className="fixed top-96 left-36 p-2 rounded-lg text-transparent cursor-not-allowed" onClick={() => alert('It is not about the magic, my friends, but the unexpected conversions that bring surprises in the end.')}>
                  Hint
             </button>
 

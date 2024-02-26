@@ -521,6 +521,12 @@ video {
 .left-10{
   left: 2.5rem;
 }
+.left-16{
+  left: 4rem;
+}
+.left-20{
+  left: 5rem;
+}
 .left-36{
   left: 9rem;
 }
@@ -539,11 +545,14 @@ video {
 .top-10{
   top: 2.5rem;
 }
+.top-20{
+  top: 5rem;
+}
+.top-28{
+  top: 7rem;
+}
 .top-96{
   top: 24rem;
-}
-.top-0{
-  top: 0px;
 }
 .mb-3{
   margin-bottom: 0.75rem;
@@ -553,6 +562,9 @@ video {
 }
 .mt-0{
   margin-top: 0px;
+}
+.mt-16{
+  margin-top: 4rem;
 }
 .mt-2{
   margin-top: 0.5rem;
@@ -587,14 +599,17 @@ video {
 .w-3\/4{
   width: 75%;
 }
+.w-2\/3{
+  width: 66.666667%;
+}
 .cursor-not-allowed{
   cursor: not-allowed;
 }
-.cursor-pointer{
-  cursor: pointer;
-}
 .cursor-text{
   cursor: text;
+}
+.cursor-pointer{
+  cursor: pointer;
 }
 .flex-col{
   flex-direction: column;
@@ -607,6 +622,9 @@ video {
 }
 .rounded-lg{
   border-radius: 0.5rem;
+}
+.rounded{
+  border-radius: 0.25rem;
 }
 .\!border{
   border-width: 1px !important;
@@ -632,11 +650,17 @@ video {
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
+.bg-opacity-75{
+  --tw-bg-opacity: 0.75;
+}
 .p-2{
   padding: 0.5rem;
 }
 .p-3{
   padding: 0.75rem;
+}
+.p-0{
+  padding: 0px;
 }
 .px-3{
   padding-left: 0.75rem;
@@ -650,12 +674,19 @@ video {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
+.pb-3{
+  padding-bottom: 0.75rem;
+}
 .font-sans{
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .text-sm{
   font-size: 0.875rem;
@@ -668,6 +699,9 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.font-bold{
+  font-weight: 700;
 }
 .font-normal{
   font-weight: 400;
